@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quisquam nisi error delectus culpa maxime ratione cum unde laboriosam recusandae neque nemo vitae odit obcaecati explicabo ex perferendis sapiente? Laudantium?</p>
+    <header class="header">
+    <div class="container">
+        <nav class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="#about myself" class="nav-link">About Myself</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#code Example" class="nav-link">Code Example</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main class="main">
+        <div class="container main-container">
+            <section class="section" id="profile">
+                <h1 class="section-title"><b>Ivan Nikitenko</b></h1>
+                <img src="./assets/img/my-photo-1.jpg" alt="Ivan-avatar" width="250">
+            </section>
+
+            <section class="section" id="contacts">
+                <h2 class="section-title"><u>Contacts</u></h2>
+                    <ul>
+                        <li>e-mail: iFankov@mail.ru</li>
+                        <li>Telegram: @man_Ivan</li>
+                        <li>Github: <a href="https://github.com/Ivan-Niki/rsschool-cv" target="_blank">link</a></li>
+                        <li>Discord nickname: ivan_nik(@Ivan-Niki)</li>
+                    </ul>
+            </section>
+
+            <section class="section" id="aboutMyself">
+                <h2 class="section-title"><u>About Myself</u></h2>
+                <p>An organised and highly-motivated person with well-developed skills and a desire to learn more.</p>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title"><u>Skills</u></h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (Basics)</li>
+                    <li>Git, GitHub</li>
+                    <li>VS Code, WebStorm</li>
+                </ul>
+            </section>
+
+            <section class="section" id="codeExample">
+                <h2 class="section-title"><u>Code Example</u></h2>
+                <pre>
+                    <code>
+function isTriangle(a,b,c){
+    if (a == 0 || b == 0 || c == 0) {
+    return false;
+    } 
+    else if ((a + b) <= c) {
+    return false;
+    } 
+    else if ((a + c) <= b) {
+    return false;
+    } 
+    else if ((b + c) <= a) {
+    return false;
+    }
+    else {
+    return true;
+    }
+}
+                    </code>
+                </pre>
+            </section>
+
+            <section class="section" id="education">
+                <h2 class="section-title"><u>Education</u></h2>
+                <p>Belarusian State University</p>
+            </section>
+
+            <section class="section" id="languages">
+                <h2 class="section-title"><u>Languages</u></h2>
+                <ul>
+                    <li>Russian (native speaker)</li>
+                    <li>English (B1)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                <li class="footer-list"><a href="https://github.com/Ivan-Niki/rsschool-cv">GitHub</a></li>
+                <li class="footer-list"><a href="https://rs.school/js/"><img src="./assets/img/rs_school_js.svg" alt="rss-logo" class="rss-logo"></a></li>
+                <li class="footer-list">&copy 2023</li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>
