@@ -1,3 +1,106 @@
-p {
-    color: blue;
+* {
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+header, main, footer {
+    border: 1px solid rgb(240, 212, 58);
+}
+
+
+.header {
+    background-color: deepskyblue;
+}
+
+.footer {
+    background-color: deepskyblue;;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 255, 255, 0.152);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4d2323;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.footer-list {
+    display: inline;
+    padding: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #133870;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #12b3bc;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #110ecf;
+  }
+
+  .rss-logo {
+    width: 120px;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  pre {
+    font-size: 15px;
+    font-weight: 400;
+    color: #a599ad;
+  }
